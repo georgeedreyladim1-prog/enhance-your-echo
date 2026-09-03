@@ -194,7 +194,7 @@ export const caseStudies: CaseStudy[] = [
     intro:
       "A multi-step Zapier workflow that transforms one long-form media file into several written marketing assets and distributes approved content to social channels.",
     tags: ["OpenAI", "Google Drive", "Filters", "Paths", "Social Publishing"],
-    cover: zapierCover.url,
+    cover: zapierCover,
     challenge:
       "Repurposing long-form content by hand means downloading media, transcribing it, reviewing the transcript, writing blog articles, adapting them per platform, publishing each post, and logging what was created.",
     solution:
@@ -204,7 +204,7 @@ export const caseStudies: CaseStudy[] = [
       "Filters, Looping and Paths for controlled automation",
       "Multi-channel content distribution from one source asset",
     ],
-    gallery: [{ src: zapier1.url, alt: "Zapier content repurposing workflow" }],
+    gallery: [{ src: zapier1, alt: "Zapier content repurposing workflow" }],
   },
 ];
 
