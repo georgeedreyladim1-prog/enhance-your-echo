@@ -45,10 +45,11 @@ export function Nav() {
             ))}
             <a
               href={`mailto:${profile.email}`}
-              className="rounded-xl bg-ink px-4 py-2.5 text-sm font-semibold text-ink-foreground transition-all duration-300 hover:-translate-y-0.5 hover:shadow-lift"
+              className="rounded-xl bg-[image:var(--gradient-signature)] px-4 py-2.5 text-sm font-semibold text-primary-foreground transition-all duration-300 hover:-translate-y-1 hover:scale-[1.04] hover:shadow-glow"
             >
               Work with me
             </a>
+
           </div>
 
           <button
