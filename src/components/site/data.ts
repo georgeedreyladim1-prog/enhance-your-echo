@@ -1,20 +1,20 @@
-import portrait from "@/assets/portfolio/portrait.webp.asset.json";
-import ghlCover from "@/assets/portfolio/ghl-cover.webp.asset.json";
-import makeCover from "@/assets/portfolio/make-cover.webp.asset.json";
-import n8nCover from "@/assets/portfolio/n8n-cover.webp.asset.json";
-import zapierCover from "@/assets/portfolio/zapier-cover.webp.asset.json";
-import toolsGroup from "@/assets/portfolio/tools-group.webp.asset.json";
-import certZapier from "@/assets/portfolio/cert-zapier.webp.asset.json";
-import certMake from "@/assets/portfolio/cert-make.webp.asset.json";
-import certN8n from "@/assets/portfolio/cert-n8n.webp.asset.json";
-import certGhl from "@/assets/portfolio/cert-ghl.webp.asset.json";
-import ghl1 from "@/assets/portfolio/ghl-1.webp.asset.json";
-import ghl2 from "@/assets/portfolio/ghl-2.webp.asset.json";
-import make1 from "@/assets/portfolio/make-1.webp.asset.json";
-import n8n1 from "@/assets/portfolio/n8n-1.webp.asset.json";
-import n8n2 from "@/assets/portfolio/n8n-2.webp.asset.json";
-import n8n3 from "@/assets/portfolio/n8n-3.webp.asset.json";
-import zapier1 from "@/assets/portfolio/zapier-1.webp.asset.json";
+const portrait = "/portfolio/portrait.webp";
+const ghlCover = "/portfolio/ghl-cover.webp";
+const makeCover = "/portfolio/make-cover.webp";
+const n8nCover = "/portfolio/n8n-cover.webp";
+const zapierCover = "/portfolio/zapier-cover.webp";
+const toolsGroup = "/portfolio/tools-group.webp";
+const certZapier = "/portfolio/cert-zapier.webp";
+const certMake = "/portfolio/cert-make.webp";
+const certN8n = "/portfolio/cert-n8n.webp";
+const certGhl = "/portfolio/cert-ghl.webp";
+const ghl1 = "/portfolio/ghl-1.webp";
+const ghl2 = "/portfolio/ghl-2.webp";
+const make1 = "/portfolio/make-1.webp";
+const n8n1 = "/portfolio/n8n-1.webp";
+const n8n2 = "/portfolio/n8n-2.webp";
+const n8n3 = "/portfolio/n8n-3.webp";
+const zapier1 = "/portfolio/zapier-1.webp";
 
 export const profile = {
   name: "George Edrey Ladim",
@@ -26,7 +26,7 @@ export const profile = {
   location: "Metro Manila, Philippines",
   linkedin: "https://linkedin.com/in/georgeedreyladim",
   linkedinLabel: "linkedin.com/in/georgeedreyladim",
-  portrait: portrait.url,
+  portrait: portrait,
 };
 
 export const navLinks = [
@@ -124,7 +124,7 @@ export const caseStudies: CaseStudy[] = [
     intro:
       "A fully automated lead-response workflow built inside GoHighLevel to capture new inquiries, follow up quickly, qualify interest, and route prospects into the appropriate next step.",
     tags: ["CRM", "SMS", "Calls", "Conditions", "Lead Follow-up"],
-    cover: ghlCover.url,
+    cover: ghlCover,
     challenge:
       "Manual lead handling means checking form submissions, updating the CRM, sending acknowledgments, remembering follow-ups, calling prospects, judging interest, sending proposals, and moving pipeline stages. It is repetitive admin work, and it is exactly where leads get lost.",
     solution:
@@ -135,8 +135,8 @@ export const caseStudies: CaseStudy[] = [
       "Automated proposal delivery and follow-up workflow routing",
     ],
     gallery: [
-      { src: ghl1.url, alt: "GoHighLevel workflow part 1" },
-      { src: ghl2.url, alt: "GoHighLevel workflow part 2" },
+      { src: ghl1, alt: "GoHighLevel workflow part 1" },
+      { src: ghl2, alt: "GoHighLevel workflow part 2" },
     ],
   },
   {
@@ -148,7 +148,7 @@ export const caseStudies: CaseStudy[] = [
     intro:
       "An accounting-data automation that replaces a manual Xero report download and Asana upload with a structured Make.com scenario.",
     tags: ["Xero API", "Asana", "CSV", "Router", "Data Processing"],
-    cover: makeCover.url,
+    cover: makeCover,
     challenge:
       "The requested General Ledger Detail report was not exposed through the Xero API, so the workflow could not simply download the same report a user sees in the Xero interface.",
     solution:
@@ -158,7 +158,7 @@ export const caseStudies: CaseStudy[] = [
       "Routers, iterators, aggregators and temporary data staging",
       "Connecting accounting data with project and task management workflows",
     ],
-    gallery: [{ src: make1.url, alt: "Make.com Xero to Asana automation scenario" }],
+    gallery: [{ src: make1, alt: "Make.com Xero to Asana automation scenario" }],
   },
   {
     id: "n8n",
@@ -169,7 +169,7 @@ export const caseStudies: CaseStudy[] = [
     intro:
       "A Slack-controlled AI workflow that automates repetitive job-search preparation while keeping the final application decision with the user.",
     tags: ["AI Agent", "Slack", "Google Docs", "Gmail", "Job API"],
-    cover: n8nCover.url,
+    cover: n8nCover,
     challenge:
       "Searching job boards, checking relevance, reading descriptions, editing resumes, drafting application emails or proposals, saving separate files, and tracking links takes hours once it is repeated across many opportunities.",
     solution:
@@ -180,9 +180,9 @@ export const caseStudies: CaseStudy[] = [
       "Slack, Google Docs, Google Drive and Gmail integration",
     ],
     gallery: [
-      { src: n8n1.url, alt: "n8n workflow overview" },
-      { src: n8n2.url, alt: "n8n workflow part 2" },
-      { src: n8n3.url, alt: "n8n workflow part 3" },
+      { src: n8n1, alt: "n8n workflow overview" },
+      { src: n8n2, alt: "n8n workflow part 2" },
+      { src: n8n3, alt: "n8n workflow part 3" },
     ],
   },
   {
@@ -208,7 +208,7 @@ export const caseStudies: CaseStudy[] = [
   },
 ];
 
-export const toolsImage = toolsGroup.url;
+export const toolsImage = toolsGroup;
 
 export const toolCategories = [
   "CRM & Sales",
@@ -221,10 +221,10 @@ export const toolCategories = [
 ];
 
 export const certificates = [
-  { img: certZapier.url, title: "No Code Automation with Zapier", issuer: "Tara AI Community+", date: "August 26, 2026" },
-  { img: certMake.url, title: "No Code Automation with Make.com", issuer: "Tara AI Community+", date: "August 28, 2026" },
-  { img: certN8n.url, title: "AI Automation with n8n", issuer: "Technical Virtual Assistants PH", date: "August 31, 2026" },
-  { img: certGhl.url, title: "HighLevel CRM", issuer: "Tara AI Community+", date: "September 1, 2026" },
+  { img: certZapier, title: "No Code Automation with Zapier", issuer: "Tara AI Community+", date: "August 26, 2026" },
+  { img: certMake, title: "No Code Automation with Make.com", issuer: "Tara AI Community+", date: "August 28, 2026" },
+  { img: certN8n, title: "AI Automation with n8n", issuer: "Technical Virtual Assistants PH", date: "August 31, 2026" },
+  { img: certGhl, title: "HighLevel CRM", issuer: "Tara AI Community+", date: "September 1, 2026" },
 ];
 
 export const processSteps = [
