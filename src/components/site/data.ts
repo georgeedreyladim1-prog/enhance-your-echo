@@ -37,12 +37,6 @@ export const navLinks = [
   { href: "#certificates", label: "Certificates" },
 ];
 
-export const stats = [
-  { value: "10+", label: "Years in manufacturing operations" },
-  { value: "4", label: "Automation platforms in production use" },
-  { value: "15 min", label: "Typical automated first-touch window" },
-  { value: "4", label: "Certifications earned in 2026" },
-];
 
 export const values = ["Detail-oriented", "Process-focused", "Adaptable", "Automation-minded"];
 

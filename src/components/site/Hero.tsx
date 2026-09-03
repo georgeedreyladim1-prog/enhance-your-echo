@@ -1,6 +1,6 @@
 import { motion } from "motion/react";
 import { ArrowRight, Mail, MapPin, Phone, Linkedin } from "lucide-react";
-import { profile, stats } from "./data";
+import { profile } from "./data";
 
 const fade = {
   hidden: { opacity: 0, y: 24 },
@@ -66,18 +66,20 @@ export function Hero() {
           <motion.div custom={4} variants={fade} initial="hidden" animate="show" className="mt-8 flex flex-wrap gap-3">
             <a
               href="#work"
-              className="group inline-flex items-center gap-2 rounded-xl bg-ink px-5 py-3 text-sm font-semibold text-ink-foreground transition-all duration-300 hover:-translate-y-0.5 hover:shadow-lift"
+              className="group inline-flex items-center gap-2 rounded-xl bg-[image:var(--gradient-signature)] px-5 py-3 text-sm font-semibold text-primary-foreground transition-all duration-300 hover:-translate-y-1 hover:scale-[1.03] hover:shadow-glow"
             >
               Explore case studies
               <ArrowRight className="size-4 transition-transform duration-300 group-hover:translate-x-1" />
             </a>
+
             <a
               href={`mailto:${profile.email}`}
-              className="inline-flex items-center gap-2 rounded-xl border border-border bg-surface px-5 py-3 text-sm font-semibold text-foreground transition-all duration-300 hover:-translate-y-0.5 hover:border-primary hover:text-primary"
+              className="inline-flex items-center gap-2 rounded-xl border border-border bg-surface px-5 py-3 text-sm font-semibold text-foreground transition-all duration-300 hover:-translate-y-1 hover:scale-[1.03] hover:border-primary hover:text-primary hover:shadow-glow"
             >
               <Mail className="size-4" />
               Email me
             </a>
+
           </motion.div>
 
           <motion.div
@@ -127,23 +129,6 @@ export function Hero() {
         </motion.div>
       </div>
 
-      <div className="relative mx-auto mt-16 w-[min(1200px,calc(100%-40px))] md:mt-20">
-        <div className="grid grid-cols-2 divide-x divide-border border-y border-border md:grid-cols-4">
-          {stats.map((s, i) => (
-            <motion.div
-              key={s.label}
-              initial={{ opacity: 0, y: 14 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.6, delay: i * 0.08 }}
-              className="px-5 py-6 [&:nth-child(3)]:border-l-0 md:[&:nth-child(3)]:border-l"
-            >
-              <div className="font-display text-3xl font-bold text-foreground">{s.value}</div>
-              <div className="mt-1.5 text-xs leading-snug text-muted-foreground">{s.label}</div>
-            </motion.div>
-          ))}
-        </div>
-      </div>
     </section>
   );
 }
