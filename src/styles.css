@@ -164,10 +164,53 @@
 
   body {
     background-color: var(--color-background);
+    background-image:
+      radial-gradient(60rem 40rem at 12% -10%, color-mix(in oklab, var(--violet) 22%, transparent), transparent 70%),
+      radial-gradient(50rem 35rem at 95% 8%, color-mix(in oklab, oklch(0.72 0.19 210) 18%, transparent), transparent 70%),
+      radial-gradient(55rem 40rem at 50% 110%, color-mix(in oklab, oklch(0.75 0.22 350) 16%, transparent), transparent 70%);
+    background-attachment: fixed;
     color: var(--color-foreground);
     font-family: var(--font-sans);
     -webkit-font-smoothing: antialiased;
   }
+
+  a,
+  button,
+  h1,
+  h2,
+  h3,
+  h4,
+  p,
+  span,
+  li,
+  img,
+  article {
+    transition:
+      color 0.35s var(--ease-spring),
+      background-color 0.35s var(--ease-spring),
+      border-color 0.35s var(--ease-spring),
+      transform 0.45s var(--ease-spring),
+      box-shadow 0.45s var(--ease-spring),
+      opacity 0.35s ease;
+  }
+
+  a:hover,
+  button:hover {
+    transform: translateY(-1px);
+  }
+
+  h1:hover,
+  h2:hover,
+  h3:hover,
+  h4:hover {
+    letter-spacing: -0.02em;
+  }
+
+  p:hover,
+  li:hover {
+    color: var(--foreground);
+  }
+
 
   h1,
   h2,
