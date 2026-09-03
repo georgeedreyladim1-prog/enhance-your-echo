@@ -77,10 +77,11 @@ export function Nav() {
               ))}
               <a
                 href={`mailto:${profile.email}`}
-                className="mt-3 rounded-xl bg-ink px-4 py-3 text-center text-sm font-semibold text-ink-foreground"
+                className="mt-3 rounded-xl bg-[image:var(--gradient-signature)] px-4 py-3 text-center text-sm font-semibold text-primary-foreground"
               >
                 Work with me
               </a>
+
             </div>
           </div>
         ) : null}
