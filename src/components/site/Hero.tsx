@@ -74,11 +74,12 @@ export function Hero() {
 
             <a
               href={`mailto:${profile.email}`}
-              className="inline-flex items-center gap-2 rounded-xl border border-border bg-surface px-5 py-3 text-sm font-semibold text-foreground transition-all duration-300 hover:-translate-y-0.5 hover:border-primary hover:text-primary"
+              className="inline-flex items-center gap-2 rounded-xl border border-border bg-surface px-5 py-3 text-sm font-semibold text-foreground transition-all duration-300 hover:-translate-y-1 hover:scale-[1.03] hover:border-primary hover:text-primary hover:shadow-glow"
             >
               <Mail className="size-4" />
               Email me
             </a>
+
           </motion.div>
 
           <motion.div
