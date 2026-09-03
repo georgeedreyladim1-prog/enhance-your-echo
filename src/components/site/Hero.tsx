@@ -1,6 +1,6 @@
 import { motion } from "motion/react";
 import { ArrowRight, Mail, MapPin, Phone, Linkedin } from "lucide-react";
-import { profile, stats } from "./data";
+import { profile } from "./data";
 
 const fade = {
   hidden: { opacity: 0, y: 24 },
