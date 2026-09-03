@@ -16,8 +16,9 @@ export function Services() {
             <Reveal
               key={s.n}
               delay={(i % 3) * 0.06}
-              className={s.featured ? "lg:col-span-3 xl:col-span-1" : undefined}
+              className={s.featured ? "lg:col-span-3 xl:col-span-1" : ""}
             >
+
               <article className="group relative h-full overflow-hidden rounded-2xl border border-border bg-surface p-6 transition-all duration-500 hover:-translate-y-1.5 hover:border-primary/40 hover:shadow-lift">
                 <div className="pointer-events-none absolute -right-16 -top-16 size-40 rounded-full bg-aura opacity-0 transition-opacity duration-500 group-hover:opacity-100" />
                 <div className="relative flex items-start justify-between gap-4">
