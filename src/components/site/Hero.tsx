@@ -127,23 +127,6 @@ export function Hero() {
         </motion.div>
       </div>
 
-      <div className="relative mx-auto mt-16 w-[min(1200px,calc(100%-40px))] md:mt-20">
-        <div className="grid grid-cols-2 divide-x divide-border border-y border-border md:grid-cols-4">
-          {stats.map((s, i) => (
-            <motion.div
-              key={s.label}
-              initial={{ opacity: 0, y: 14 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.6, delay: i * 0.08 }}
-              className="px-5 py-6 [&:nth-child(3)]:border-l-0 md:[&:nth-child(3)]:border-l"
-            >
-              <div className="font-display text-3xl font-bold text-foreground">{s.value}</div>
-              <div className="mt-1.5 text-xs leading-snug text-muted-foreground">{s.label}</div>
-            </motion.div>
-          ))}
-        </div>
-      </div>
     </section>
   );
 }
