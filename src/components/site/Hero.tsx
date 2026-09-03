@@ -66,11 +66,12 @@ export function Hero() {
           <motion.div custom={4} variants={fade} initial="hidden" animate="show" className="mt-8 flex flex-wrap gap-3">
             <a
               href="#work"
-              className="group inline-flex items-center gap-2 rounded-xl bg-ink px-5 py-3 text-sm font-semibold text-ink-foreground transition-all duration-300 hover:-translate-y-0.5 hover:shadow-lift"
+              className="group inline-flex items-center gap-2 rounded-xl bg-[image:var(--gradient-signature)] px-5 py-3 text-sm font-semibold text-primary-foreground transition-all duration-300 hover:-translate-y-1 hover:scale-[1.03] hover:shadow-glow"
             >
               Explore case studies
               <ArrowRight className="size-4 transition-transform duration-300 group-hover:translate-x-1" />
             </a>
+
             <a
               href={`mailto:${profile.email}`}
               className="inline-flex items-center gap-2 rounded-xl border border-border bg-surface px-5 py-3 text-sm font-semibold text-foreground transition-all duration-300 hover:-translate-y-0.5 hover:border-primary hover:text-primary"
