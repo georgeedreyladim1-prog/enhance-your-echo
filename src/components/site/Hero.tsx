@@ -12,6 +12,12 @@ const fade = {
 };
 
 export function Hero() {
+  const rx = useMotionValue(0);
+  const ry = useMotionValue(0);
+  const spring = { stiffness: 140, damping: 18 };
+  const srx = useSpring(rx, spring);
+  const sry = useSpring(ry, spring);
+
   return (
     <section id="top" className="relative overflow-hidden pt-16 pb-20 md:pt-24 md:pb-28">
       <div className="pointer-events-none absolute -top-56 -right-40 size-[640px] rounded-full bg-aura" />
