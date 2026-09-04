@@ -1,4 +1,4 @@
-import { motion } from "motion/react";
+import { motion, useMotionValue, useSpring } from "motion/react";
 import { ArrowRight, Mail, MapPin, Phone, Linkedin } from "lucide-react";
 import { profile } from "./data";
 
