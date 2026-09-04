@@ -110,22 +110,42 @@ export function Hero() {
         </div>
 
         <motion.div
-          initial={{ opacity: 0, scale: 0.95 }}
-          animate={{ opacity: 1, scale: 1 }}
-          transition={{ duration: 0.9, delay: 0.15, ease: [0.22, 0.68, 0.25, 1.02] }}
+          initial={{ opacity: 0, scale: 0.92, filter: "blur(12px)" }}
+          animate={{ opacity: 1, scale: 1, filter: "blur(0px)" }}
+          transition={{ duration: 1, delay: 0.15, ease: [0.22, 0.68, 0.25, 1.02] }}
+          onMouseMove={(e) => {
+            const r = e.currentTarget.getBoundingClientRect();
+            rx.set(((e.clientY - r.top) / r.height - 0.5) * -14);
+            ry.set(((e.clientX - r.left) / r.width - 0.5) * 16);
+          }}
+          onMouseLeave={() => {
+            rx.set(0);
+            ry.set(0);
+          }}
+          style={{ perspective: 1000 }}
           className="relative mx-auto w-full max-w-sm lg:max-w-none"
         >
           <div
-            className="absolute -inset-6 rounded-[2.5rem] bg-aura"
+            className="absolute -inset-6 rounded-full bg-aura"
             style={{ animation: "float-slow 9s ease-in-out infinite" }}
           />
-          <div className="relative overflow-hidden rounded-[2rem] border border-border bg-surface shadow-lift transition-transform duration-500 hover:-translate-y-1.5">
-            <img
+          <div
+            className="pointer-events-none absolute inset-x-6 bottom-2 h-40 rounded-full bg-[image:var(--gradient-signature)] opacity-25 blur-3xl"
+            style={{ animation: "float-slow 7s ease-in-out infinite" }}
+          />
+          <motion.div
+            style={{ rotateX: srx, rotateY: sry, transformStyle: "preserve-3d" }}
+            className="relative"
+          >
+            <motion.img
               src={profile.portrait}
               alt="Portrait of George Edrey Ladim, Technical Virtual Assistant"
-              className="aspect-4/5 w-full object-cover"
+              className="relative z-10 mx-auto w-full max-w-[420px] object-contain drop-shadow-[0_30px_60px_rgba(0,0,0,0.45)]"
+              animate={{ y: [0, -14, 0] }}
+              transition={{ duration: 8, repeat: Infinity, ease: "easeInOut" }}
+              whileHover={{ scale: 1.03 }}
             />
-          </div>
+          </motion.div>
         </motion.div>
       </div>
 
