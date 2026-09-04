@@ -29,7 +29,7 @@ export function Contact() {
                 </p>
                 <a
                   href={`mailto:${profile.email}`}
-                  className="group mt-8 inline-flex items-center gap-2 rounded-xl bg-background px-5 py-3 text-sm font-semibold text-foreground transition-all duration-300 hover:-translate-y-0.5 hover:shadow-glow"
+                  className="group mt-8 inline-flex items-center gap-2 rounded-xl px-5 py-3 text-sm font-semibold text-primary-foreground transition-all duration-300 [background:var(--gradient-signature)] hover:-translate-y-0.5 hover:shadow-glow hover:brightness-110"
                 >
                   Start a conversation
                   <ArrowRight className="size-4 transition-transform duration-300 group-hover:translate-x-1" />
