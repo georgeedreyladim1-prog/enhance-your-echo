@@ -1,4 +1,4 @@
-const portrait = "/portfolio/portrait.webp";
+const portrait = "/portfolio/portrait-cut.png";
 const ghlCover = "/portfolio/ghl-cover.webp";
 const makeCover = "/portfolio/make-cover.webp";
 const n8nCover = "/portfolio/n8n-cover.webp";
